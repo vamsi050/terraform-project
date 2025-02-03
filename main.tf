@@ -2,7 +2,7 @@ provider "aws" {
   region = var.aws_region
 }
 
-module "ec2_instance" {
+module "aws_instance" {
   source      = "./modules/ec2"
   instance_name = var.ec2_instance_name
 }
