@@ -5,6 +5,7 @@ provider "aws" {
 module "aws_instance" {
   source      = "./modules/ec2"
   instance_name = var.ec2_instance_name
+  ami = var.ami_id
 }
 
 module "s3_bucket" {
